@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>{directory}</id>
+    <name>{name}</name>
+    <version>1.0</version>
+    <default_language>en</default_language>
+    <priority>1000</priority>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+</addon>
