@@ -61,7 +61,7 @@ if ($configs['styles']) {
     touch("design/themes/{$theme}/css/addons/{$dir}/styles.less");
     file_put_contents(
         "design/themes/{$theme}/templates/addons/{$dir}/hooks/index/styles.post.tpl",
-        "{style src=\"addons/soneritics_extracattext/styles.less\"}\n"
+        "{style src=\"addons/{$dir}/styles.less\"}\n"
     );
 }
 
@@ -71,7 +71,7 @@ if ($configs['scripts']) {
     touch("design/themes/{$theme}/css/addons/{$dir}/scripts.js");
     file_put_contents(
         "design/themes/{$theme}/templates/addons/{$dir}/hooks/index/scripts.post.tpl",
-        "{script src=\"addons/soneritics_extracattext/scripts.js\"}\n"
+        "{script src=\"addons/{$dir}/scripts.js\"}\n"
     );
 }
 
