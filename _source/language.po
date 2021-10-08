@@ -1,6 +1,5 @@
 msgid ""
-msgstr ""
-"Project-Id-Version: addon\n"
+msgstr "Project-Id-Version: addon\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language: {langLow}_{langUp}\n"
 "PO-Revision-Date: {date} 21:00+0200\n"
