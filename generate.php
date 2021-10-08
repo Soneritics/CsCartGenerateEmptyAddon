@@ -61,17 +61,17 @@ if ($configs['styles']) {
     touch("design/themes/{$theme}/css/addons/{$dir}/styles.less");
     file_put_contents(
         "design/themes/{$theme}/templates/addons/{$dir}/hooks/index/styles.post.tpl",
-        "{style src=\"addons/{$dir}/styles.less\"}\n"
+        "{style src=\"css/addons/{$dir}/styles.less\"}\n"
     );
 }
 
 // Scripts
 if ($configs['scripts']) {
-    mkdir("design/themes/{$theme}/css/addons/{$dir}", 0777, true);
-    touch("design/themes/{$theme}/css/addons/{$dir}/scripts.js");
+    mkdir("js/addons/{$dir}", 0777, true);
+    touch("js/addons/{$dir}/scripts.js");
     file_put_contents(
         "design/themes/{$theme}/templates/addons/{$dir}/hooks/index/scripts.post.tpl",
-        "{script src=\"addons/{$dir}/scripts.js\"}\n"
+        "{script src=\"js/addons/{$dir}/scripts.js\"}\n"
     );
 }
 
