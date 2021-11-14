@@ -61,7 +61,7 @@ if ($configs['styles']) {
     touch("design/themes/{$theme}/css/addons/{$dir}/styles.less");
     file_put_contents(
         "design/themes/{$theme}/templates/addons/{$dir}/hooks/index/styles.post.tpl",
-        "{style src=\"css/addons/{$dir}/styles.less\"}\n"
+        "{style src=\"addons/{$dir}/styles.less\"}\n"
     );
 }
 
